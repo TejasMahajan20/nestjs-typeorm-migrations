@@ -9,12 +9,9 @@ export class User extends BaseEntity {
     @Column({ nullable: true })
     lastName: string;
 
-    @Column({ default: true })
-    isActive: boolean;
-
-    @Column({ nullable: true })
-    address: string;
-
-    @Column({ nullable: true })
+    @Column({ nullable: false })
     email: string;
+
+    @Column({ nullable: false })
+    password: string;
 }
