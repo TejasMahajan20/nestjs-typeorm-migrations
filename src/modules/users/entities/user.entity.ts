@@ -12,15 +12,9 @@ export class User extends BaseEntity {
     @Column({ default: true })
     isActive: boolean;
 
-    @Column({ default: "Indore" })
+    @Column({ nullable: true })
     address: string;
 
-    @Column({ default: "test@gmail.com" })
+    @Column({ nullable: true })
     email: string;
-
-    @Column({ default: "test" })
-    username: string;
-
-    @Column({ default: "test" })
-    password: string;
 }
